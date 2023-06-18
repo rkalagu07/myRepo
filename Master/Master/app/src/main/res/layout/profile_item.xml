@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="415dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card1"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="16dp">
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/gallery_image"
+                android:layout_width="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:layout_height="160dp">
+            </androidx.appcompat.widget.AppCompatImageView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:clickable="true"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFFFF"
+                android:id="@+id/new_profile_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/gallery_image"
+                android:layout_marginTop="-40dp"
+                android:elevation="3dp"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/upload_profile"
+                android:focusable="true" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/new_profile_name"
+                android:drawableStart="@drawable/ic_person"
+                android:layout_below="@+id/new_profile_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laxman Marothiya"
+                android:layout_marginTop="10dp"
+                android:textColor="#4E4F51"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:drawablePadding="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/new_profile_shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_store"
+                android:layout_below="@+id/new_profile_name"
+                android:layout_marginTop="10dp"
+                android:text="(Adhyaksh)"
+                android:textColor="#4E4F51"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textSize="14sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/new_profile_service"
+                android:layout_width="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_profile_shopname"
+                android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/skill"
+                android:text="Surat"
+                android:textColor="#4E4F51"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
